@@ -29,11 +29,21 @@ button {
 ul {
   list-style: none;
 }
-
+audio {
+  width: 100%;
+  border: 1px solid #ffff;
+  background: #f1f3f4;
+  border-radius: 4px;
+  padding: 2rem 0rem;
+  height: 100px;
+}
 /* Custom Classes  */
 .container {
   max-width: min(100% - 2rem, 1400px);
   margin-inline: auto;
+}
+.mb-2 {
+  margin-bottom: 3rem;
 }
 
 /* Header */
@@ -94,9 +104,12 @@ ul {
 /* Main Content Design  */
 #main {
   position: relative;
+  margin-bottom: 2rem;
 }
 #main .main-content {
   margin: 132px 82px;
+  margin-top: 132px;
+  margin-bottom: 0px;
   position: relative;
   border: 3px solid #f0f0f0;
   border-radius: 7px;
@@ -147,14 +160,24 @@ ul {
   line-height: 1.7;
 }
 .content-inner-body .content-box__body {
-  padding: 1rem;
+  padding: 1rem 1rem;
 }
 .content-box__body .title {
   position: relative;
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
-  padding: 0.5rem 0rem;
+  padding: 0.3rem 1rem;
   margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+.content-box__body .title.bg-color {
+  background-color: #f0f0f0;
+}
+.content-box__body .title i {
+  font-size: 2rem;
 }
 .content-box__body form {
   padding: 0rem 1rem;
@@ -201,6 +224,14 @@ ul {
 .input-group.tall textarea {
   height: 130px;
 }
+
+form.task-form-5 {
+  padding: 0;
+}
+form.task-form-5 .input-group {
+  margin: 0rem 3rem;
+  width: auto;
+}
 .select-group {
   margin: 1rem 0rem;
   display: flex;
@@ -218,7 +249,9 @@ ul {
   border: 1px solid #f0f0f0;
   font-family: poppins;
 }
-
+.example-btn {
+  margin: 1rem 3rem;
+}
 .add-thread-btn {
   background: var(--primary-color);
   padding: 0.6rem 1rem;
