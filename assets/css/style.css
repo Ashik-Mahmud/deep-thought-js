@@ -118,6 +118,7 @@ audio {
   color: var(--accent-color);
   font-size: 1rem;
   padding: 0.8rem;
+  border-radius: 7px 7px 0px 0px;
 }
 
 .main-content .content-body {
@@ -226,6 +227,10 @@ audio {
 }
 .input-group.tall textarea {
   height: 130px;
+}
+
+.pdf-format {
+  border: 10px solid #333;
 }
 
 form.task-form-5 {
