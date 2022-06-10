@@ -14,8 +14,10 @@ dashboardBtn.addEventListener("click", ()=>{
     }
 })
 
-
-/* Showing All the Task  */
+/*
+*
+* Showing All the Task 
+* */
 
 // Get Task Title 
 const getTaskTitle = async() =>{
@@ -40,5 +42,23 @@ const showTaskContent = async() =>{
 showTaskContent();
 
 
+// Work With Accordion 
+const contentBoxes = document.querySelectorAll(".content-box");
+console.log(contentBoxes);
+const addingClasses = () =>{
+    
+}
+contentBoxes.forEach(box => {
+    const boxTitle = box.querySelector(".content-box__header");
+    boxTitle.addEventListener("click", ()=>{
+        box.classList.toggle("active");
+        boxTitle.classList.toggle("active");  
+    })
+    box.querySelector(".down").addEventListener("click", () => {
+        box.classList.toggle("active");
+        boxTitle.classList.toggle("active");        
+    })
+    
+})
 
 

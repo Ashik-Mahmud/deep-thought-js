@@ -43,7 +43,10 @@ audio {
 .mb-2 {
   margin-bottom: 3rem;
 }
-
+.next-btn {
+  text-align: right;
+  margin-right: 5rem;
+}
 /* Header */
 #header {
   background-color: #f0f0f0;
@@ -137,7 +140,7 @@ audio {
   gap: 5rem;
   padding: 0rem 2rem;
   align-items: flex-start;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 .content-inner-body .content-box {
   flex: 1;
@@ -145,14 +148,27 @@ audio {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.08);
   border-radius: 10px;
   overflow: hidden;
+  max-height: 1546px;
+  transition: max-height 0.5s ease;
+}
+.content-boxes {
+  flex: 1;
+}
+.content-inner-body .content-box.active {
+  transition: max-height 0.5s ease;
+  max-height: 46px;
 }
 .content-box .content-box__header {
   background: var(--secondary-color);
   color: var(--accent-color);
-  padding: 0.5rem;
+  padding: 0.8rem;
   text-align: center;
   font-size: 0.9rem;
   cursor: pointer;
+  text-transform: capitalize;
+}
+.content-box .content-box__header.active {
+  background-color: #444;
 }
 .content-inner-body .content-box p {
   font-size: 0.9rem;
@@ -242,6 +258,13 @@ form.task-form-5 .input-group {
 }
 form.task-form-5 .submit-btn,
 form.task-form-5 .example-btn {
+  margin: 1rem 3rem;
+}
+.content-inner-body .content-box__body.task-form-area {
+  margin: 1rem 0rem;
+  padding: 0rem 0rem;
+}
+.content-box__body.task-form-area .task-save-btn {
   margin: 0rem 3rem;
 }
 
@@ -329,10 +352,12 @@ form.task-form-5 .example-btn {
 }
 .submit-btn .save {
   margin-top: 0.5rem;
+
   font-size: 2rem;
 }
 .down {
   text-align: right;
+  cursor: pointer;
   font-size: 1.6rem;
 }
 
@@ -343,7 +368,7 @@ form.task-form-5 .example-btn {
   width: 300px;
   background: #fff;
 
-  height: 60%;
+  height: 70%;
   box-shadow: 0px 0px 15px rgb(0 0 0 / 10%);
   border-radius: 10px;
   z-index: 1;
@@ -358,6 +383,7 @@ form.task-form-5 .example-btn {
 }
 .site-dashboard li {
   border-bottom: 1px solid #e9e9e9;
+  text-transform: capitalize;
 }
 .site-dashboard ol strong {
   margin-bottom: 1rem;

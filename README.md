@@ -2,7 +2,7 @@
 
 This is html, css , javascript based website.
 
-## Here is the Live Site [Click Here]()
+## Here is the Live Site [Click Here](https://deep-thought-js.netlify.app/)
 
 ## Using Technologies
 
